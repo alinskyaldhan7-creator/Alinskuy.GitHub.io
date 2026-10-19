@@ -1,1 +1,210 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tentang Saya | Alinski Aldhan Pratama</title>
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      background: linear-gradient(135deg, #490916, #8e2636);
+      font-family: 'Segoe UI', Arial, sans-serif;
+      color: #333;
+      margin: 0;
+      padding: 25px 15px;
+      line-height: 1.7;
+    }
+    .site {
+      width: 90%;
+      max-width: 1000px;
+      margin: 0 auto;
+      overflow: hidden;
+      border-radius: 18px;
+      background: white;
+      box-shadow: 0 15px 45px rgba(0,0,0,.25);
+    }
+    .banner {
+      position: relative;
+      height: 220px;
+      background: linear-gradient(135deg, #650d1b, #a34353);
+      display: grid;
+      place-items: center;
+      text-align: center;
+      padding: 20px;
+    }
+    .banner h1 {
+      margin: 0;
+      color: #fff0d6;
+      font: bold 48px Georgia, serif;
+      letter-spacing: 2px;
+      text-shadow: 2px 3px 8px #350711;
+    }
+    .banner p {
+      color: #f4d9b3;
+      font: italic 18px Georgia, serif;
+      letter-spacing: 2px;
+      margin: 8px 0 0;
+    }
+    nav {
+      text-align: center;
+      padding: 18px 12px;
+      background: #f8f3ec;
+      border-bottom: 2px solid #d6ad69;
+    }
+    nav a {
+      display: inline-block;
+      background: linear-gradient(145deg, #8e2636, #650d1b);
+      padding: 10px 18px;
+      margin: 5px;
+      border-radius: 9px;
+      border: 1px solid #d6ad69;
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      font-size: 14px;
+    }
+    nav a:hover {
+      background: #a34353;
+      transform: translateY(-2px);
+    }
+    .content {
+      display: grid;
+      grid-template-columns: 3fr 1fr;
+    }
+    main { padding: 32px 35px; }
+    aside {
+      background: #f8f3ec;
+      border-left: 1px solid #eadede;
+      padding: 25px;
+    }
+    h2, h3 {
+      font-family: Georgia, serif;
+      color: #650d1b;
+    }
+    h2 { font-size: 28px; margin-top: 0; }
+    h3 { font-size: 21px; margin-bottom: 8px; }
+    p { font-size: 15px; }
+    .intro { font-size: 17px; }
+    .profile { list-style: none; padding: 0; }
+    .profile li {
+      padding: 8px 0;
+      border-bottom: 1px solid #eadede;
+    }
+    .profile strong { color: #650d1b; }
+    aside h3 {
+      border-bottom: 2px solid #d6ad69;
+      padding-bottom: 10px;
+    }
+    aside ul { padding-left: 20px; }
+    aside li { margin-bottom: 10px; color: #650d1b; }
+    footer {
+      background: #350711;
+      text-align: center;
+      padding: 16px;
+      color: white;
+      font-size: 12px;
+      letter-spacing: 1px;
+    }
+    @media (max-width: 650px) {
+      body { padding: 10px; }
+      .site { width: 100%; }
+      .banner { height: 165px; }
+      .banner h1 { font-size: 30px; }
+      .banner p { font-size: 14px; letter-spacing: 1px; }
+      .content { display: block; }
+      main, aside { padding: 22px; }
+      aside {
+        border-left: 0;
+        border-top: 2px solid #d6ad69;
+      }
+      nav a {
+        padding: 8px 11px;
+        font-size: 12px;
+        margin: 4px 2px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="site">
+    <header class="banner">
+      <div>
+        <h1>Alinski Aldhan Pratama</h1>
+        <p>Terus belajar, berkembang, dan meraih cita-cita</p>
+      </div>
+    </header>
 
+    <nav aria-label="Menu utama">
+      <a href="#beranda">Beranda</a>
+      <a href="#tentang">Tentang Saya</a>
+      <a href="#minat">Minat</a>
+      <a href="#cita-cita">Cita-cita</a>
+    </nav>
+
+    <div class="content" id="beranda">
+      <main>
+        <section id="tentang">
+          <h2>Halo, saya Alinski!</h2>
+          <p class="intro">
+            Saya <strong>Alinski Aldhan Pratama</strong>. Saya adalah pribadi
+            yang ingin terus belajar, mencoba hal-hal baru, dan mengembangkan
+            kemampuan diri. Bagi saya, setiap pengalaman bisa menjadi kesempatan
+            untuk mendapatkan pengetahuan dan menjadi lebih baik.
+          </p>
+          <p>
+            Saya berusaha menjalani setiap kegiatan dengan semangat dan
+            tanggung jawab. Saya juga senang mencari tahu bagaimana sesuatu
+            bekerja, terutama hal-hal yang berkaitan dengan teknologi dan dunia
+            digital.
+          </p>
+        </section>
+
+        <section id="minat">
+          <h3>Hal yang saya minati</h3>
+          <p>
+            Saya tertarik mempelajari teknologi, komputer, dan perkembangan
+            dunia digital. Saya ingin terus menambah pengetahuan, mengasah
+            kreativitas, serta mencoba membuat sesuatu yang bermanfaat dengan
+            kemampuan yang saya pelajari.
+          </p>
+        </section>
+
+        <section id="cita-cita">
+          <h3>Harapan dan cita-cita</h3>
+          <p>
+            Saya ingin meraih cita-cita melalui usaha, kedisiplinan, dan
+            kemauan untuk terus belajar. Ke depannya, saya berharap dapat
+            mengembangkan kemampuan di bidang yang saya sukai dan menggunakan
+            ilmu tersebut untuk memberi manfaat bagi orang lain.
+          </p>
+        </section>
+
+        <section>
+          <h3>Prinsip saya</h3>
+          <p>
+            Saya percaya bahwa kemajuan dimulai dari langkah kecil. Karena itu,
+            saya ingin tetap tekun, terbuka terhadap masukan, dan tidak mudah
+            menyerah saat menghadapi tantangan.
+          </p>
+        </section>
+      </main>
+
+      <aside>
+        <h3>Profil Singkat</h3>
+        <ul class="profile">
+          <li><strong>Nama:</strong><br>Alinski Aldhan Pratama</li>
+          <li><strong>Minat:</strong><br>Teknologi dan dunia digital</li>
+          <li><strong>Tujuan:</strong><br>Terus belajar dan mengembangkan diri</li>
+          <li>
+            <strong>Motto:</strong><br>
+            Belajar hari ini untuk menjadi lebih baik esok hari.
+          </li>
+        </ul>
+      </aside>
+    </div>
+
+    <footer>&copy; 2026 Alinski Aldhan Pratama</footer>
+  </div>
+</body>
+</html>
