@@ -1,69 +1,475 @@
+Alinski aldhan pratama, [19.10.2026 08:39]
 <!DOCTYPE html>
 <html lang="id">
 <head>
     <title>Beranda</title>
     <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <style>
+        
+/* ===== GLOBAL ===== */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(135deg, #490916, #8e2636);
+    font-family: 'Segoe UI', Arial, sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 25px 15px;
+    line-height: 1.7;
+}
+
+/* ===== CONTAINER WEBSITE ===== */
+table {
+    width: 90%;
+    max-width: 1000px;
+    border: none;
+    border-collapse: separate;
+    border-spacing: 0;
+    border-radius: 18px;
+    overflow: hidden;
+    background: white;
+    box-shadow: 0 15px 45px rgba(0,0,0,0.25);
+}
+
+td {
+    border: none;
+    padding: 25px;
+}
+
+/* ===== HEADER ===== */
+table > tbody > tr:first-child > td.header-banner {
+    position: relative;
+    padding: 0;
+    height: 220px;
+    overflow: hidden;
+    background: #650d1b;
+}
+
+/* ===== GAMBAR BANNER ===== */
+.header-banner img {
+    display: block;
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* ===== POSISI TEKS ===== */
+.header-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    padding: 15px;
+    text-align: center;
+}
+
+/* ===== JUDUL WEBSITE ===== */
+
+/* ===== JUDUL DENGAN SHADOW 3D ===== */
+.header-text h1 {
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 52px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #fff0d6;
+
+    text-shadow:
+        1px 1px 0 #d6ad69,
+        2px 2px 0 #b88a50,
+        3px 3px 0 #80512e,
+        4px 4px 0 #54291f,
+        5px 5px 5px rgba(0,0,0,0.8),
+        8px 8px 15px rgba(0,0,0,0.7),
+        0 0 20px rgba(255,220,170,0.4);
+
+    margin: 0;
+}
+
+
+/* ===== SUBTITLE ===== */
+.header-text p {
+    font-family: Georgia, serif;
+    font-style: italic;
+    font-size: 18px;
+    letter-spacing: 3px;
+    color: #f4d9b3;
+    margin-top: 12px;
+
+    text-shadow:
+        2px 2px 5px rgba(0,0,0,0.9);
+}
+
+/* ===== RESPONSIVE MOBILE ===== */
+@media (max-width: 600px) {
+    table > tbody > tr:first-child > td.header-banner {
+        height: 160px;
+    }
+
+    .header-banner img {
+        height: 160px;
+    }
+
+    .header-text h1 {
+        font-size: 28px;
+        letter-spacing: 1px;
+    }
+
+    .header-text p {
+        font-size: 13px;
+        letter-spacing: 1px;
+    }
+}
+
+
+/* ===== NAVIGATION MENU ===== */
+table > tbody > tr:nth-child(2) > td {
+    background: #f8f3ec;
+    text-align: center;
+    padding: 22px 12px;
+    border-bottom: 2px solid #d6ad69;
+}
+
+/* ===== TOMBOL MENU ===== */
+table > tbody > tr:nth-child(2) a {
+    display: inline-block;
+    background: linear-gradient(145deg, #8e2636, #650d1b);
+    padding: 12px 20px;
+    margin: 5px 7px;
+    border-radius: 10px;
+    border: 1px solid #d6ad69;
+
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+
+    box-shadow:
+        0 4px 0 #350711,
+        0 7px 12px rgba(0,0,0,0.25);
+
+    transition: all 0.3s ease;
+}
+
+/* ===== WARNA TEKS ===== */
+table > tbody > tr:nth-child(2) a font {
+    color: white;
+}
+
+/* ===== EFEK HOVER ===== */
+table > tbody > tr:nth-child(2) a:hover {
+    background: linear-gradient(145deg, #b44b5e, #8e2636);
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 6px 0 #350711,
+        0 10px 18px rgba(0,0,0,0.3);
+}
+
+/* ===== EFEK SAAT DIKLIK ===== */
+table > tbody > tr:nth-child(2) a:active {
+    transform: translateY(3px);
+    box-shadow: 0 1px 0 #350711;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 600px) {
+    table > tbody > tr:nth-child(2) a {
+        padding: 10px 12px;
+        font-size: 12px;
+        margin: 5px 3px;
+    }
+}
+
+/* ===== MAIN CONTENT ===== */
+table > tbody > tr:nth-child(3) > td:first-child {
+    background: #ffffff;
+    padding: 35px;
+    vertical-align: top;
+}
+
+h3 {
+    font-family: Georgia, serif;
+    font-size: 23px;
+    color: #650d1b;
+    line-height: 1.4;
+    margin-bottom: 12px;
+}
+
+p {
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+small {
+    color: #888;
+}
+
+hr {
+    border: none;
+    height:
+
+Alinski aldhan pratama, [19.10.2026 08:39]
+1px;
+    background: #e6d6d6;
+    margin: 35px 0;
+}
+
+/* ===== LINK SELANJUTNYA ===== */
+td:first-child p a {
+    display: inline-block;
+    background: #650d1b;
+    color: white;
+    padding: 9px 20px;
+    border-radius: 7px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+td:first-child p a:hover {
+    background: #a34353;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 12px rgba(101,13,27,0.2);
+}
+
+/* ===== SIDEBAR ===== */
+table > tbody > tr:nth-child(3) > td:last-child {
+    background: #f8f3ec;
+    border-left: 1px solid #eadede;
+    padding: 25px;
+}
+
+table > tbody > tr:nth-child(3) > td:last-child p {
+    font-size: 18px;
+    font-weight: bold;
+    color: #650d1b;
+    border-bottom: 2px solid #d6ad69;
+    padding-bottom: 10px;
+}
+
+ol {
+    padding-left: 22px;
+}
+
+li {
+    margin-bottom: 14px;
+    color: #650d1b;
+}
+
+li a {
+    color: #650d1b;
+    text-decoration: none;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+li a:hover {
+    color: #b66a40;
+    text-decoration: underline;
+}
+
+/* ===== FOOTER ===== */
+table > tbody > tr:last-child > td {
+    background: #350711;
+    text-align: center;
+    padding: 18px;
+}
+
+table > tbody > tr:last-child small {
+    color: #ffffff;
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+/* ===== RESPONSIVE MOBILE ===== */
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+
+    table {
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 26px;
+    }
+
+    td {
+        padding: 15px;
+    }
+
+    table > tbody > tr:nth-child(3) > td {
+        display: block;
+        width: 100%;
+    }
+
+    table > tbody > tr:nth-child(3) > td:last-child {
+        border-left: none;
+        border-top: 2px solid #d6ad69;
+    }
+
+    table > tbody > tr:nth-child(2) a {
+        padding: 6px;
+        font-size: 13px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+}
+
+    </style>
 </head>
 
-<body bgcolor="lavender" background="images/background.svg">
-    <!-- Halaman web tanpa CSS. Murni hanya memakai HTML -->
+<body bgcolor="maroon">
+
+  
+
     <p>&nbsp;</p>
-    <table border="1" width="800px" cellpadding="12px" align="center" bgcolor="white">
+
+    <table border="1" width="800px" cellpadding="12px" align="center" bgcolor="maroon">
+
+    
+<!-- HEADER -->
+<tr>
+    <td colspan="2" class="header-banner">
+        <img src="banner.jpg" alt="Banner Website Finevarra">
+
+        <div class="header-text">
+            <h1>Website Alinski</h1>
+            <p>things about me.</p>
+        </div>
+    </td>
+</tr>
+
+        <!-- MENU -->
         <tr>
-            <td colspan="2" align="center" bgcolor="teal" background="images/jaring-teal.svg">
-                <font color="white">
-                    <p>&nbsp;</p>
-                    <h1>Website Alinski</h1>
-                    <p><em>Alinski ganteng mirip jefri nichol.</em></p>
-                    <p>&nbsp;</p>
+            <td colspan="2" bgcolor="white">
+                <font color="black">
+                    <a href="./">
+                        <font color="black">Beranda</font>
+                    </a> |
+
+                    <a href="tentang-saya.html">
+                        <font color="black">Tentang Saya</font>
+                    </a> |
+
+                    <a href="sekolah-ku.html">
+                        <font color="black">Sekolahku</font>
+                    </a> |
+
+                    <a href="syair-lagu.html">
+                        <font color="black">Syair Lagu</font>
+                    </a>
                 </font>
             </td>
         </tr>
+
+        <!-- ISI -->
         <tr>
-            <td colspan="2" bgcolor="silver">
-                <a href="./">Beranda</a> |
-                <a href="tentang-saya.html">Tentang Saya</a> |
-                <a href="sekolahku.html">Sekolahku</a> |
-                <a href="syair-lagu.html">Syair Lagu</a>
+            <td width="75%" bgcolor="white">
+
+                <font color="black">
+
+                    <!-- Content utama -->
+
+                    <h3> Inovasi Teknologi Pembelajaran Digital di Sekolah</h3>
+
+                    <p align="right">
+                        <small>
+                            <em>Senin, 7 September 2026</em>
+                        </small>
+                    </p>
+
+                    <p>
+                        Penggunaan teknologi dalam sistem pendidikan modern semakin meningkat. Metode pembelajaran kini menggabungkan platform digital yang interaktif untuk membantu siswa memahami materi dengan lebih cepat dan menyenangkan.
+
+Dengan adanya akses internet dan aplikasi pembelajaran interaktif, siswa dapat mengeksplorasi ilmu pengetahuan dari mana saja tanpa terbatas oleh ruang kelas fisik.
+                    </p>
+
+                    <p>
+                        <a href="berita-1.html">Selanjutnya</a>
+                    </p>
+
+                    <hr>
+
+                    <h3>Antusiasme Siswa Menjelang Pentas Seni Sekolah</h3>
+
+                    <p align="right">
+                        <small>
+
+Alinski aldhan pratama, [19.10.2026 08:39]
+<em>Jumat, 4 September 2026</em>
+                        </small>
+                    </p>
+
+                    <p>
+                       Persiapan acara tahunan Pentas Seni Sekolah kini telah mencapai tahap akhir. Para siswa tampak antusias mengikuti latihan rutin musik, tari, dan teater setiap sore setelah jam pelajaran usai.
+
+Acara ini diharapkan dapat menjadi sarana penyaluran bakat kreatif bagi seluruh siswa sekaligus mempererat rasa kebersamaan antar angkatan.
+                    </p>
+
+                    <p>
+                        <a href="berita-2.html">Selanjutnya</a>
+                    </p>
+
+                    <!-- Akhir dari content utama -->
+
+                </font>
+
+            </td>
+
+            <!-- SIDEBAR -->
+            <td width="25%" valign="top" bgcolor="white">
+
+                <font color="black">
+
+                    <p>Tautan eksternal</p>
+
+                    <ol>
+                        <li>
+                            <a href="https://www.mawan.or.id">
+                                Website Alinski
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="https://www.github.com">
+                                Github
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="https://www.wikipedia.org">
+                                Wikipedia
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="https://www.w3schools.com">
+                                W3Schools
+                            </a>
+                        </li>
+                    </ol>
+
+                </font>
+
             </td>
         </tr>
-        <tr>
-            <td width="75%">
-                <!-- Content utama -->
-
-                <h3>Inovasi Teknologi Pembelajaran Digital di Sekolah</h3>
-                <p align="right"><small><em>Senin, 24 September 2026</em></small></p>
-                <p>Penggunaan teknologi dalam sistem pendidikan modern semakin meningkat. Metode pembelajaran kini menggabungkan platform digital yang interaktif untuk membantu siswa memahami materi dengan lebih cepat dan menyenangkan..</p>
-                <p><a href="berita/berita-1.html">Selanjutnya</a></p>
-
-                <hr>
-
-                <h3>Antusiasme Siswa Menjelang Pentas Seni Sekolah</h3>
-                <p align="right"><small><em>Senin, 24 September 2026</em></small></p>
-                <p>Persiapan acara tahunan Pentas Seni Sekolah kini telah mencapai tahap akhir. Para siswa tampak antusias mengikuti latihan rutin musik, tari, dan teater setiap sore setelah jam pelajaran usai.
-
-Acara ini diharapkan dapat menjadi sarana penyaluran bakat kreatif bagi seluruh siswa sekaligus mempererat rasa kebersamaan antar angkatan..</p>
-                <p><a href="berita/berita-2.html">Selanjutnya</a></p>
-
-                <!-- Akhir dari content utama -->
-            </td>
-            <td width="25%" valign="top" bgcolor="snow">
-                <p>Tautan eksternal</p>
-                <ol>
-                    <li><a href="https://www.alinski.or.id">Website Mawan</a></li>
-                    <li><a href="https://www.github.com">Github</a></li>
-                    <li><a href="https://www.wikipedia.org">Wikipedia</a></li>
-                    <li><a href="https://www.w3schools.com">W3Schools</a></li>
-                </ol>
-            </td>
-        </tr>
-        <tr>
+ <tr>
             <td colspan="2" align="right" bgcolor="black">
-                <font color="white"><small>&copy; Copyright Mawan A. Nugroho, 2026.</small></font>
+                <font color="white"><small>&copy; Copyright Alinski aldhan pratama, 2026.</small></font>
             </td>
         </tr>
     </table>
     <p>&nbsp;</p>
-</body>
+ 
 
+</body>
 </html>
